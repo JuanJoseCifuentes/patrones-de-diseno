@@ -1,8 +1,11 @@
 package adapter.metodoPago;
 
+import adapter.Cliente.Usuario;
+
 public class PayPal implements IPago{
     @Override
-    public void pagar(String datosUsuario) {
-        System.out.println("Usuario "+datosUsuario+" Su pago en Paypal fue exitoso");
+    public void pagar(Usuario usuario) {
+
+        System.out.println("Usuario "+usuario.nombre+" su pago en Paypal fue exitoso");
     }
 }

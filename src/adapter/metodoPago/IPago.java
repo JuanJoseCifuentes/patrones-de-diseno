@@ -1,6 +1,8 @@
 package adapter.metodoPago;
 
+import adapter.Cliente.Usuario;
+
 public interface IPago {
 
-     void pagar(String datosUsuario);
+     void pagar(Usuario usuario);
 }
