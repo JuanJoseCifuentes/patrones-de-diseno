@@ -15,11 +15,6 @@ public class PizzaBuilder implements Builder{
     private HashMap<Ingrediente, Integer> ingredientes;
 
     @Override
-    public void reset() {
-    Pizza pizza = new Pizza("","",null,false);
-    }
-
-    @Override
     public void definirTamano(Tamano tamano) {
     this.tamanoFinal = tamano.getTamano();
     }

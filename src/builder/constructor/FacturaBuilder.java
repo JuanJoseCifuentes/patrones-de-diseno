@@ -14,10 +14,6 @@ public class FacturaBuilder implements Builder{
     private double precioMasa;
     private HashMap<Ingrediente, Integer> ingredientes;
 
-    @Override
-    public void reset() {
-        Factura factura = new Factura(0.0,0.0,0.0, ingredientes);
-    }
 
     @Override
     public void definirTamano(Tamano tamano) {
