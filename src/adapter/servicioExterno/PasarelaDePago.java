@@ -1,7 +1,5 @@
 package adapter.servicioExterno;
 
-import adapter.Cliente.Usuario;
-
 public class PasarelaDePago {
     public String realizarPago(String banco){
 
