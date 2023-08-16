@@ -1,4 +1,4 @@
-package builder;
+package builder.main;
 
 import builder.componente.Factura;
 import builder.componente.Masa;
