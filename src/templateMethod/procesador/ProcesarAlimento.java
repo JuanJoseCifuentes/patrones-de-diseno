@@ -19,6 +19,7 @@ public class ProcesarAlimento extends ProcesarPedido {
     public boolean verificarCaducidad() {
         //Simulamos el stock de productos que no han vencido mediante un simple Math.random()
         //Con un 95% de probabilidad, la tienda tiene ese alimento sin vencer.
+        System.out.println("Verificando fecha de caducidad del producto... (PROCESO SOLO PARA ALIMENTOS)");
         boolean isAvailable = Math.random() > 0.05;
         if (!isAvailable){
             System.out.println("Todo el stock del producto se encuentra caducado");

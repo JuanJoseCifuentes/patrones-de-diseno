@@ -29,7 +29,9 @@ public abstract class ProcesarPedido {
     }
 
     public boolean verificarValidez() {
+        System.out.println("Verificando stock del producto...");
         if (verificarInventario()) {
+            System.out.println("El producto se encuentra en stock!");
             return verificarTalla() && verificarCaducidad();
         } else {
             System.out.println("El producto no se encuentra en stock.");

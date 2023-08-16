@@ -14,6 +14,7 @@ public class ProcesarRopa extends ProcesarPedido {
     public boolean verificarTalla() {
         //Simulamos el stock de la tienda de una talla concreta mediante un simple Math.random()
         //Con un 70% de probabilidad, la tienda tiene esa talla.
+        System.out.println("Verificando que se encuentre en la talla deseada... (PROCESO ÚNICO PARA ROPA)");
         boolean isAvailable = Math.random() > 0.3;
         if (!isAvailable){
             System.out.println("El producto no se encuentra en la talla deseada.");
