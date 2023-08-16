@@ -11,11 +11,11 @@ public class Main {
 
         Usuario usuario = new Usuario("Arturo Calle","Bancolombia");
 
-        IPago Tarjeta = new TarjetaDeCredito();
-        Tarjeta.pagar(usuario);
+        IPago tarjeta = new TarjetaDeCredito();
+        tarjeta.pagar(usuario);
 
-        IPago Paypal = new PayPal();
-        Paypal.pagar(usuario);
+        IPago paypal = new PayPal();
+        paypal.pagar(usuario);
 
         IPago pasarela = new Adaptador();
         pasarela.pagar(usuario);
